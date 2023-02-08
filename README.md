@@ -1,7 +1,13 @@
 # NMEA2000 Fuel Level Adapter
 
 ## General
-This repository shows how to build an adapter which reads the value (resistance) of a fuel level meter and publishes this information as a NMEA 2000 PGN (see the "NMEA 2000" paragraph below). With some minor modifications this design can be used with different types (brands and therefore values) of level meters and can even be used for water levels. The latter will make use of a different PGN which will be explained further in this document.
+This project shows how to build an adapter which reads the value (resistance) of a fuel level meter and publishes this information as a NMEA 2000 PGN (see the "NMEA 2000" paragraph below). Due to the complexity and fairly high cost of getting started with a NMEA 2000 network, this project also incorporates HTML5-based meter display so one can view the measured data with ones mobile device over WiFi. Thus being able to start out with a single (stand-alone) device. With some minor modifications this design can be used with different types (brands and therefore values) of level meters and can also be used for reporting other fluid levels.
+
+## Features
+- Buffered connection to the NMEA 2000 network;
+- Support for multiple versions (brands/types/values) of Level Meters;
+- WiFi integration with HTML5-based meter display;
+- Using the ESP32 platform.
 
 ## NMEA 2000
 NMEA 2000, abbreviated to NMEA2k or N2k and standardised as IEC 61162-3, is a plug-and-play communications standard used for connecting marine sensors and display units within ships and boats. Electrically, NMEA 2000 is compatible with the Controller Area Network ("CAN Bus") used on road vehicles and fuel engines. The higher-level protocol format is based on SAE J1939, with specific messages for the marine environment.
