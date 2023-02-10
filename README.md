@@ -1,7 +1,7 @@
-# NMEA2000 Fuel Level Adapter
+# NMEA 2000 Fuel Level Adapter
 
 ## General
-This project shows how to build an adapter which reads the value (resistance) of a fuel level meter and publishes this information as a NMEA 2000 PGN (see the "NMEA 2000" paragraph below). Due to the complexity and fairly high cost of getting started with a NMEA 2000 network, this project also incorporates HTML5-based meter display so one can view the measured data with ones mobile device over WiFi. Thus being able to start out with a single (stand-alone) device. With some minor modifications this design can be used with different types (brands and therefore values) of level meters and can also be used for reporting other fluid levels.
+This project shows how to build an adapter which reads the value (resistance) of a fuel level meter and publishes this information as a NMEA 2000 PGN (see the "NMEA 2000" paragraph below). Due to the complexity and fairly high cost of getting started with a NMEA 2000 network, this project also incorporates an HTML5-based meter display so one can view the measured data with ones mobile device over WiFi. Thus being able to start out with a single (stand-alone) device. With some minor modifications this design can be used with different types (brands and therefore values) of level meters and can also be used for reporting other fluid levels.
 
 ## Features
 - Buffered connection to the NMEA 2000 network;
